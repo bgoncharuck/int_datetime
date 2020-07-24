@@ -2,24 +2,24 @@ library int_datetime;
 
 extension datetime on int {
   DateTime get toDateTime => DateTime.fromMillisecondsSinceEpoch(this);
+}
 
-  int get dtNow => DateTime.now().millisecondsSinceEpoch;
+int get dtNow => DateTime.now().millisecondsSinceEpoch;
 
-  int get dtDay {
-    final now = DateTime.now();
+int get dtDay {
+  final now = DateTime.now();
 
-    return DateTime.utc(now.year, now.month, now.day).millisecondsSinceEpoch;
-  }
+  return DateTime.utc(now.year, now.month, now.day).millisecondsSinceEpoch;
+}
 
-  int get dtMonth {
-    final now = DateTime.now();
+int get dtMonth {
+  final now = DateTime.now();
 
-    return DateTime.utc(now.year, now.month).millisecondsSinceEpoch;
-  }
+  return DateTime.utc(now.year, now.month).millisecondsSinceEpoch;
+}
 
-  int get dtYear {
-    final now = DateTime.now();
+int get dtYear {
+  final now = DateTime.now();
 
-    return DateTime.utc(now.year).millisecondsSinceEpoch;
-  }
+  return DateTime.utc(now.year).millisecondsSinceEpoch;
 }
