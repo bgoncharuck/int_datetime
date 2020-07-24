@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "int_datetime",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    }
+  ],
+  "generated": "2020-07-24T11:25:16.578793Z",
+  "generator": "pub",
+  "generatorVersion": "2.8.4"
+}
