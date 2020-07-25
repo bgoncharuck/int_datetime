@@ -5,21 +5,21 @@ extension datetime on int {
 }
 
 class IntDateTime {
-  int get dtNow => DateTime.now().millisecondsSinceEpoch;
+  static int get dtNow => DateTime.now().millisecondsSinceEpoch;
 
-  int get dtDay {
+  static int get dtDay {
     final now = DateTime.now();
 
     return DateTime.utc(now.year, now.month, now.day).millisecondsSinceEpoch;
   }
 
-  int get dtMonth {
+  static int get dtMonth {
     final now = DateTime.now();
 
     return DateTime.utc(now.year, now.month).millisecondsSinceEpoch;
   }
 
-  int get dtYear {
+  static int get dtYear {
     final now = DateTime.now();
 
     return DateTime.utc(now.year).millisecondsSinceEpoch;
